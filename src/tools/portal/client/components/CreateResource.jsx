@@ -1,6 +1,7 @@
 import { Typography, Paper, Box, TextField, Button } from "@material-ui/core"
 import { Autocomplete } from "@material-ui/lab"
 import { useState } from "react"
+import { useNavigate } from "react-router";
 import { ToastContainer } from "react-toastify"
 import 'react-toastify/dist/ReactToastify.css';
 import logo from "../../../../images/background_create_res.jpeg"
@@ -55,11 +56,21 @@ export const CreateResource = () => {
         PortalService.createResource(resource)    
     }
 
+    const navigate = useNavigate()
+    const handleLogout = () => {
+        navigate('/resource-management-portal')
+    }
+
     return (
         <div>
             <Paper>
                 <Box style={{ padding: 10, height: 72, display: 'flex', alignItems: 'center' }}>
                     <Typography variant={'h4'} style={{ marginLeft: 40 }}> NxtWave </Typography>
+                    <Button
+                        variant={"contained"}
+                        style={{ background: "default", marginLeft: "auto" }}
+                        onClick={handleLogout}
+                    > Logout </Button>
                 </Box>
             </Paper>
             <div style={{ display: 'flex', alignItems: 'center' }}>

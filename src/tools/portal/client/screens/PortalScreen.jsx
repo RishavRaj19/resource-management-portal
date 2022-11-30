@@ -35,6 +35,10 @@ export const PortalScreen = () => {
         navigate('/resource-management-portal/create-resource')
     }
 
+    const handleLogout = () => {
+        navigate('/resource-management-portal')
+    }
+
     const handleSearch = (event, value) => {
         setSearchBarValue(value)
     }
@@ -53,12 +57,17 @@ export const PortalScreen = () => {
         <div>
             <Paper>
                 <Box style={{ padding: 10, height: 72, display: 'flex', alignItems: 'center' }}>
-                    <Typography variant={'h4'} style={{ marginLeft: "auto", marginRight: -112 }}> Resource Management Portal </Typography>
+                    <Typography variant={'h4'} style={{ marginLeft: "auto", marginRight: -180 }}> Resource Management Portal </Typography>
                     <Button
                         variant={"contained"}
-                        style={{ background: "#2DCA73", color: "white", marginLeft: "auto", marginRight: 32 }}
+                        style={{ background: "#2DCA73", color: "white", marginLeft: "auto" }}
                         onClick={handleResourceAddition}
                     > Add Item </Button>
+                    <Button
+                        variant={"contained"}
+                        style={{ background: "default", marginLeft: "12px" }}
+                        onClick={handleLogout}
+                    > Logout </Button>
                 </Box>
             </Paper>
 

@@ -54,7 +54,6 @@ export const LoginPage = () => {
     const navigate = useNavigate()
     const handleLogin = () => {
         if (validateUserName(userName) && validatePassword(password)) {
-            console.log('logged in');
             navigate('/resource-management-portal/home')
         }
     }
