@@ -1,11 +1,8 @@
 import { Grid, CardContent, Typography, Card } from '@material-ui/core'
-import React, { useState } from 'react'
-import { RESOURCE_PER_PAGE } from '../constants'
-import { Pagination } from '@material-ui/lab'
+import React from 'react'
 
 export const ResourceView = (props) => {
     const { resources } = props
-    const [pageNumber, setPageNumber] = useState(0)
 
     const card = (resource) => {
         return (
@@ -27,29 +24,17 @@ export const ResourceView = (props) => {
         )
     }
 
-    const handlePageChange = (event, pageNum) => {
-        console.log(pageNum - 1);
-        setPageNumber(pageNum - 1)
-    }
-
     return (
         <>
             <Grid container>
-                {resources.slice(pageNumber * RESOURCE_PER_PAGE, (pageNumber + 1) * RESOURCE_PER_PAGE).map((resource, index) => (
+                {resources.map((resource, index) => (
                     <Grid item xs={2} sm={4} md={4} key={resource['id']}>
-                        <Card variant='outlined' style={{ width: 360, height: 192, marginTop: 32, marginLeft: 32 }}>
+                        <Card variant='outlined' style={{ width: 360, height: 192, marginTop: 32, marginLeft: 'auto', marginRight: 'auto'}}>
                             {card(resource)}
                         </Card>
                     </Grid>
                 ))}
             </Grid>
-            <div style={{ display: 'flex', justifyContent: 'center', marginTop: 40 }}>
-                <Pagination
-                    count={Math.ceil(Object.values(resources).length / RESOURCE_PER_PAGE)}
-                    onChange={handlePageChange}
-                    page={pageNumber + 1}
-                />
-            </div>
         </>
     )
 }
