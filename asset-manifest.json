@@ -1,16 +1,16 @@
 {
   "files": {
     "main.css": "/resource-management-portal/static/css/main.c74c2eb8.css",
-    "main.js": "/resource-management-portal/static/js/main.fedca51e.js",
+    "main.js": "/resource-management-portal/static/js/main.e7bb9865.js",
     "static/js/787.5043e31f.chunk.js": "/resource-management-portal/static/js/787.5043e31f.chunk.js",
     "static/media/background_create_res.jpeg": "/resource-management-portal/static/media/background_create_res.bb85a85763b55afd6995.jpeg",
     "index.html": "/resource-management-portal/index.html",
     "main.c74c2eb8.css.map": "/resource-management-portal/static/css/main.c74c2eb8.css.map",
-    "main.fedca51e.js.map": "/resource-management-portal/static/js/main.fedca51e.js.map",
+    "main.e7bb9865.js.map": "/resource-management-portal/static/js/main.e7bb9865.js.map",
     "787.5043e31f.chunk.js.map": "/resource-management-portal/static/js/787.5043e31f.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.c74c2eb8.css",
-    "static/js/main.fedca51e.js"
+    "static/js/main.e7bb9865.js"
   ]
 }
