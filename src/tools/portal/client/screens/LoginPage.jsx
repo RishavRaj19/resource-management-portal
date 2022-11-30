@@ -59,7 +59,7 @@ export const LoginPage = () => {
     }
 
     return (
-        <div>
+        <div style={{backgroundColor: '#E5E4E2', minHeight: '100vh'}}>
 
             <Paper>
                 <Box style={{ padding: 10, height: 72, display: 'flex', alignItems: 'center' }}>
