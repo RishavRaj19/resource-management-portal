@@ -29,7 +29,7 @@ export const ResourceView = (props) => {
             <Grid container>
                 {resources.map((resource, index) => (
                     <Grid item xs={2} sm={4} md={4} key={resource['id']}>
-                        <Card variant='outlined' style={{ width: 360, height: 192, marginTop: 32, marginLeft: 'auto', marginRight: 'auto'}}>
+                        <Card variant='outlined' style={{ width: 360, height: 192, marginTop: 48, marginLeft: 'auto', marginRight: 'auto'}}>
                             {card(resource)}
                         </Card>
                     </Grid>

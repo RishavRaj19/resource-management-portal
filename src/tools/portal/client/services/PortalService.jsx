@@ -67,7 +67,7 @@ export class PortalService {
     static errorToast = (message) => {
         return toast.error(message, {
             position: "bottom-center",
-            hideProgressBar: true,
+            hideProgressBar: false,
             closeOnClick: true,
             pauseOnHover: true,
             draggable: true,
@@ -79,7 +79,7 @@ export class PortalService {
     static successToast = () => {
         return toast.success('Validated! Resource creation successful!', {
             position: "bottom-center",
-            hideProgressBar: true,
+            hideProgressBar: false,
             closeOnClick: true,
             pauseOnHover: true,
             draggable: true,
