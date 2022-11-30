@@ -32,7 +32,7 @@ export const PortalScreen = () => {
 
     const navigate = useNavigate()
     const handleResourceAddition = () => {
-        navigate('/res-management-portal/create-resource')
+        navigate('/resource-management-portal/create-resource')
     }
 
     const handleSearch = (event, value) => {
