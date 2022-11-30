@@ -144,17 +144,7 @@ export const CreateResource = () => {
                             onClick={handleResourceCreation}
                         > CREATE </Button>
                     </div>
-                    <ToastContainer
-                        position="bottom-center"
-                        hideProgressBar
-                        newestOnTop
-                        closeOnClick
-                        rtl={false}
-                        pauseOnFocusLoss
-                        draggable
-                        pauseOnHover
-                        theme="colored"
-                    />
+                    <ToastContainer/>
                 </Box>
                 <img src={logo} style={{ width: "50%", height: "805px", marginLeft: "auto" }} />
             </div>
