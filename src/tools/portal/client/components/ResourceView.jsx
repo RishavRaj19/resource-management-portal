@@ -18,7 +18,7 @@ export const ResourceView = (props) => {
                     <div style={{ marginTop: 20 }}>
                         <a href={resource['link']} style={{ color: "#0B69FF" }}> {resource['link']} </a>
                     </div>
-                    <p style={{ marginTop: 8, fontSize: "14px", color: "#7E858E" }}> {resource['id']} {resource['description']} </p>
+                    <p style={{ marginTop: 8, fontSize: "14px", color: "#7E858E" }}> {resource['description']} </p>
                 </CardContent>
             </React.Fragment>
         )
