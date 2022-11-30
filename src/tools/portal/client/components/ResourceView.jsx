@@ -7,10 +7,6 @@ export const ResourceView = (props) => {
     const { resources } = props
     const [pageNumber, setPageNumber] = useState(0)
 
-    console.log(props);
-    console.log(Object.values(resources).length);
-    console.log(pageNumber);
-
     const card = (resource) => {
         return (
             <React.Fragment>
